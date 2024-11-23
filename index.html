@@ -14,7 +14,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
-    <script src="js/language.js"></script>
 </head>
 <body>
     <!-- Header Navigation -->
@@ -24,16 +23,16 @@
                 <img src="images/feebee-logo.png" alt="FeeBee Logo">
             </div>
             <ul class="nav-links">
-                <li><a href="/" data-translate="navigation.home">الرئيسية</a></li>
-                <li><a href="/about" data-translate="navigation.about">من نحن</a></li>
-                <li><a href="/services" data-translate="navigation.services">خدماتنا</a></li>
-                <li><a href="/work" data-translate="navigation.work">أعمالنا وعملاؤنا</a></li>
-                <li><a href="/blog" data-translate="navigation.blog">المدونة</a></li>
-                <li><a href="/contact" data-translate="navigation.contact">اتصل بنا</a></li>
-                <li><a href="/faq" data-translate="navigation.faq">الأسئلة الشائعة</a></li>
+                <li><a href="index.html" data-translate="navigation.home">الرئيسية</a></li>
+                <li><a href="pages/about.html" data-translate="navigation.about">من نحن</a></li>
+                <li><a href="pages/services.html" data-translate="navigation.services">خدماتنا</a></li>
+                <li><a href="pages/work.html" data-translate="navigation.work">أعمالنا وعملاؤنا</a></li>
+                <li><a href="pages/blog.html" data-translate="navigation.blog">المدونة</a></li>
+                <li><a href="pages/contact.html" data-translate="navigation.contact">اتصل بنا</a></li>
+                <li><a href="pages/faq.html" data-translate="navigation.faq">الأسئلة الشائعة</a></li>
             </ul>
             <div class="language-switcher">
-                <button class="lang-btn">
+                <button class="lang-btn" onclick="langManager.toggleLanguage()">
                     <span class="lang-text">English</span>
                     <span class="lang-icon">🌐</span>
                 </button>
@@ -136,6 +135,11 @@
     </footer>
 
     <!-- Scripts -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            window.langManager = new LanguageManager();
+        });
+    </script>
     <script src="js/language.js"></script>
     <script src="js/main.js"></script>
 </body>
