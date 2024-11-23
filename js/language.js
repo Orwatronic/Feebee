@@ -9,6 +9,11 @@ class LanguageManager {
         try {
             console.log('Initializing Language Manager');
             await this.loadTranslations();
+            if (Object.keys(this.translations).length === 0) {
+                console.error('No translations loaded');
+                return;
+            }
+            console.log('Available translations:', Object.keys(this.translations));
             this.loadSavedLanguage();
             this.setupEventListeners();
             this.updateUI();
@@ -35,6 +40,9 @@ class LanguageManager {
         } catch (error) {
             console.error('Error loading translations:', error);
             console.error('Error details:', error.message);
+            if (error instanceof TypeError) {
+                console.error('Network error - Check if the JSON files exist and the paths are correct');
+            }
         }
     }
 
@@ -46,17 +54,32 @@ class LanguageManager {
     }
 
     setupEventListeners() {
-        document.querySelector('.lang-btn').addEventListener('click', () => {
+        const langBtn = document.querySelector('.lang-btn');
+        if (!langBtn) {
+            console.error('Language button not found');
+            return;
+        }
+        console.log('Setting up language button click listener');
+        langBtn.addEventListener('click', () => {
+            console.log('Language button clicked');
             this.toggleLanguage();
         });
     }
 
     toggleLanguage() {
-        console.log('Toggling language from:', this.currentLang);
-        this.currentLang = this.currentLang === 'ar' ? 'en' : 'ar';
-        this.updateUI();
-        this.saveLanguagePreference();
-        console.log('Language switched to:', this.currentLang);
+        try {
+            console.log('Current language:', this.currentLang);
+            this.currentLang = this.currentLang === 'ar' ? 'en' : 'ar';
+            console.log('Switching to:', this.currentLang);
+            document.documentElement.classList.add('lang-switching');
+            this.updateUI();
+            this.saveLanguagePreference();
+            setTimeout(() => {
+                document.documentElement.classList.remove('lang-switching');
+            }, 300);
+        } catch (error) {
+            console.error('Error in toggleLanguage:', error);
+        }
     }
 
     updateUI() {

@@ -1,0 +1,121 @@
+Blog cards with hover effects
+Sidebar widgets
+Pagination
+Responsive layout for the blog page
+
+The CSS styles for the contact form and map
+The CSS styles for the FAQ accordion and categories
+The JavaScript code for the FAQ functionality
+Form validation and submission handling
+
+
+Add more translations for specific sections?
+Show how to handle dynamic content?
+Add animations for language switching?
+Implement language-specific fonts and styles?
+
+Translations: 
+How to update the HTML with the translation attributes?
+How to add more sections to the translations?
+How to handle dynamic content like blog posts?
+How to add language-specific styling?
+
+Key points about the implementation:
+Each translatable element has a data-translate attribute
+The attribute values match the paths in the translation JSON files
+Nested translations use dot notation (e.g., "services.erp.title")
+Default text is in Arabic (RTL)
+Would you like me to show you:
+How to update the other pages (about, services, etc.) with translation attributes?
+How to handle dynamic content like blog posts?
+How to add language-specific styling?
+How to add loading animations during language switching?
+Let me know what you'd like to focus on next!
+
+
+images/
+└── logo/
+    ├── feebee-logo.png        (Main colored logo)
+    ├── feebee-logo-white.png  (White version for dark backgrounds)
+    └── favicon.ico            (Browser tab icon)
+
+images/
+└── hero/
+    ├── home-hero.jpg         (Main homepage hero background)
+    ├── about-hero.jpg        (About page hero)
+    ├── services-hero.jpg     (Services page hero)
+    ├── contact-hero.jpg      (Contact page hero)
+    └── blog-hero.jpg         (Blog page hero)
+
+
+images/
+└── services/
+    ├── erp.jpg              (ERP service illustration)
+    ├── digital-transform.jpg (Digital transformation illustration)
+    ├── digitization.jpg     (Digitization service illustration)
+    ├── support.jpg          (Technical support illustration)
+    └── icons/
+        ├── erp-icon.svg
+        ├── digital-icon.svg
+        ├── tech-icon.svg
+        └── support-icon.svg
+
+images/
+└── blog/
+    ├── post1.jpg            (ERP future article)
+    ├── post2.jpg            (Digital transformation article)
+    ├── post3.jpg            (Technology trends)
+    ├── post4.jpg            (Case study)
+    └── thumbnails/          (Smaller versions for recent posts)
+        ├── thumb1.jpg
+        ├── thumb2.jpg
+        ├── thumb3.jpg
+        └── thumb4.jpg
+
+images/
+└── team/
+    ├── team1.jpg            (Team member 1)
+    ├── team2.jpg            (Team member 2)
+    ├── team3.jpg            (Team member 3)
+    └── about-company.jpg    (Company office or team photo)
+
+images/
+└── ui/
+    ├── search-icon.svg
+    ├── menu-icon.svg
+    ├── close-icon.svg
+    ├── arrow-right.svg
+    ├── arrow-left.svg
+    └── social/
+        ├── facebook.svg
+        ├── twitter.svg
+        ├── linkedin.svg
+        └── instagram.svg
+
+images/
+└── clients/
+    ├── client1.png
+    ├── client2.png
+    ├── client3.png
+    ├── client4.png
+    └── client5.png
+
+
+images/
+└── patterns/
+    ├── hero-pattern.svg
+    ├── section-divider.svg
+    └── footer-pattern.svg
+
+Image Specifications:
+Logo: PNG format with transparent background, minimum 200x50px
+Hero images: High-resolution JPG, minimum 1920x1080px
+Blog images: 16:9 ratio, minimum 800x450px
+Team photos: Square format, minimum 400x400px
+Client logos: PNG with transparent background, minimum 200x200px
+Icons: SVG format for scalability
+All images should be optimized for web use
+Optional but Recommended:
+Multiple sizes of each image for responsive design
+WebP versions of all images for better performance
+Placeholder versions for lazy loading
