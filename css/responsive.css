@@ -1,0 +1,26 @@
+/* Mobile First Approach */
+
+/* Small devices (phones, 576px and up) */
+@media (min-width: 576px) {
+    /* Styles for small devices */
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    /* Styles for medium devices */
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    /* Styles for large devices */
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    /* Styles for extra large devices */
+}
+
+/* Custom breakpoint for specific components */
+@media (min-width: 1400px) {
+    /* Styles for very large screens */
+}

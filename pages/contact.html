@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اتصل بنا | FeeBee</title>
+    <meta name="description" content="تواصل معنا للاستفسار عن خدماتنا في مجال ERP والتحول الرقمي">
+    <!-- روابط CSS -->
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/arabic-specific.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <!-- إضافة الخطوط -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- نفس الهيدر السابق -->
+    
+    <main>
+        <section class="page-hero contact-hero">
+            <h1>اتصل بنا</h1>
+            <p>نحن هنا لمساعدتك. تواصل معنا الآن</p>
+        </section>
+
+        <section class="contact-content">
+            <div class="container">
+                <div class="contact-grid">
+                    <!-- معلومات الاتصال -->
+                    <div class="contact-info-card">
+                        <div class="info-item">
+                            <i class="icon-location"></i>
+                            <h3>العنوان</h3>
+                            <p>[عنوان الشركة]</p>
+                        </div>
+                        <div class="info-item">
+                            <i class="icon-phone"></i>
+                            <h3>الهاتف</h3>
+                            <p>[رقم الهاتف]</p>
+                        </div>
+                        <div class="info-item">
+                            <i class="icon-email"></i>
+                            <h3>البريد الإلكتروني</h3>
+                            <p>info@feebee.com</p>
+                        </div>
+                    </div>
+
+                    <!-- نموذج الاتصال -->
+                    <div class="contact-form">
+                        <h2>أرسل رسالة</h2>
+                        <form id="contactForm" action="#" method="POST">
+                            <div class="form-group">
+                                <label for="name">الاسم الكامل</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">البريد الإلكتروني</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">رقم الهاتف</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">الموضوع</label>
+                                <input type="text" id="subject" name="subject" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">الرسالة</label>
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="submit-btn">إرسال الرسالة</button>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- خريطة الموقع -->
+                <div class="map-container">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=YOUR_MAP_EMBED_URL"
+                        width="100%" 
+                        height="450" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- نفس الفوتر السابق -->
+</body>
+</html>

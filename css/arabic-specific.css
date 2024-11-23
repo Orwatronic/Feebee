@@ -1,0 +1,23 @@
+/* يمكن إضافة هذا في ملف منفصل أو في style.css */
+
+/* تحسين عرض النصوص العربية */
+.arabic-text {
+    text-align: justify;
+    line-height: 1.8;
+    letter-spacing: 0;
+}
+
+/* تحسين المسافات بين الكلمات العربية */
+p, li {
+    word-spacing: 0.1em;
+}
+
+/* تحسين عرض الأرقام العربية */
+.numbers {
+    font-feature-settings: "kern", "liga", "clig", "calt", "tnum";
+}
+
+/* تحسين محاذاة العناوين */
+h1, h2, h3, h4, h5, h6 {
+    text-align: right;
+} 
