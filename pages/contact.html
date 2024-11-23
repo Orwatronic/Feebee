@@ -20,71 +20,91 @@
     
     <main>
         <section class="page-hero contact-hero">
-            <h1>اتصل بنا</h1>
-            <p>نحن هنا لمساعدتك. تواصل معنا الآن</p>
+            <h1 data-translate="contact.hero.title">اتصل بنا</h1>
+            <p data-translate="contact.hero.subtitle">نحن هنا لمساعدتك. تواصل معنا الآن</p>
         </section>
 
         <section class="contact-content">
             <div class="container">
                 <div class="contact-grid">
                     <!-- معلومات الاتصال -->
-                    <div class="contact-info-card">
-                        <div class="info-item">
-                            <i class="icon-location"></i>
-                            <h3>العنوان</h3>
-                            <p>[عنوان الشركة]</p>
-                        </div>
-                        <div class="info-item">
-                            <i class="icon-phone"></i>
-                            <h3>الهاتف</h3>
-                            <p>[رقم الهاتف]</p>
-                        </div>
-                        <div class="info-item">
-                            <i class="icon-email"></i>
-                            <h3>البريد الإلكتروني</h3>
-                            <p>info@feebee.com</p>
+                    <div class="contact-info">
+                        <h2 data-translate="contact.info.title">معلومات الاتصال</h2>
+                        <div class="info-items">
+                            <div class="info-item">
+                                <i class="icon-location"></i>
+                                <h3 data-translate="contact.info.address.title">العنوان</h3>
+                                <p data-translate="contact.info.address.value">المملكة العربية السعودية، الرياض</p>
+                            </div>
+                            <div class="info-item">
+                                <i class="icon-phone"></i>
+                                <h3 data-translate="contact.info.phone.title">الهاتف</h3>
+                                <p data-translate="contact.info.phone.value">+966 XX XXX XXXX</p>
+                            </div>
+                            <div class="info-item">
+                                <i class="icon-email"></i>
+                                <h3 data-translate="contact.info.email.title">البريد الإلكتروني</h3>
+                                <p>info@feebee.com</p>
+                            </div>
+                            <div class="info-item">
+                                <i class="icon-clock"></i>
+                                <h3 data-translate="contact.info.hours.title">ساعات العمل</h3>
+                                <p data-translate="contact.info.hours.value">الأحد - الخميس: 9:00 ص - 5:00 م</p>
+                            </div>
                         </div>
                     </div>
 
                     <!-- نموذج الاتصال -->
                     <div class="contact-form">
-                        <h2>أرسل رسالة</h2>
+                        <h2 data-translate="contact.form.title">أرسل رسالة</h2>
                         <form id="contactForm" action="#" method="POST">
                             <div class="form-group">
-                                <label for="name">الاسم الكامل</label>
-                                <input type="text" id="name" name="name" required>
+                                <label for="name" data-translate="contact.form.name.label">الاسم الكامل</label>
+                                <input type="text" id="name" name="name" 
+                                       data-translate-placeholder="contact.form.name.placeholder" 
+                                       placeholder="أدخل اسمك الكامل" required>
                             </div>
                             <div class="form-group">
-                                <label for="email">البريد الإلكتروني</label>
-                                <input type="email" id="email" name="email" required>
+                                <label for="email" data-translate="contact.form.email.label">البريد الإلكتروني</label>
+                                <input type="email" id="email" name="email" 
+                                       data-translate-placeholder="contact.form.email.placeholder"
+                                       placeholder="أدخل بريدك الإلكتروني" required>
                             </div>
                             <div class="form-group">
-                                <label for="phone">رقم الهاتف</label>
-                                <input type="tel" id="phone" name="phone">
+                                <label for="phone" data-translate="contact.form.phone.label">رقم الهاتف</label>
+                                <input type="tel" id="phone" name="phone" 
+                                       data-translate-placeholder="contact.form.phone.placeholder"
+                                       placeholder="أدخل رقم هاتفك">
                             </div>
                             <div class="form-group">
-                                <label for="subject">الموضوع</label>
-                                <input type="text" id="subject" name="subject" required>
+                                <label for="subject" data-translate="contact.form.subject.label">الموضوع</label>
+                                <select id="subject" name="subject" required>
+                                    <option value="" data-translate="contact.form.subject.default">اختر الموضوع</option>
+                                    <option value="erp" data-translate="contact.form.subject.options.erp">استفسار عن ERP</option>
+                                    <option value="digital" data-translate="contact.form.subject.options.digital">التحول الرقمي</option>
+                                    <option value="support" data-translate="contact.form.subject.options.support">الدعم الفني</option>
+                                    <option value="other" data-translate="contact.form.subject.options.other">موضوع آخر</option>
+                                </select>
                             </div>
                             <div class="form-group">
-                                <label for="message">الرسالة</label>
-                                <textarea id="message" name="message" rows="5" required></textarea>
+                                <label for="message" data-translate="contact.form.message.label">الرسالة</label>
+                                <textarea id="message" name="message" rows="5" 
+                                          data-translate-placeholder="contact.form.message.placeholder"
+                                          placeholder="اكتب رسالتك هنا" required></textarea>
                             </div>
-                            <button type="submit" class="submit-btn">إرسال الرسالة</button>
+                            <button type="submit" class="submit-btn" data-translate="contact.form.submit">إرسال الرسالة</button>
                         </form>
                     </div>
                 </div>
 
                 <!-- خريطة الموقع -->
-                <div class="map-container">
-                    <iframe 
-                        src="https://www.google.com/maps/embed?pb=YOUR_MAP_EMBED_URL"
-                        width="100%" 
-                        height="450" 
-                        style="border:0;" 
-                        allowfullscreen="" 
-                        loading="lazy">
-                    </iframe>
+                <div class="map-section">
+                    <h2 data-translate="contact.map.title">موقعنا</h2>
+                    <div class="map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=YOUR_MAP_EMBED_URL"
+                                width="100%" height="450" style="border:0;" 
+                                allowfullscreen="" loading="lazy"></iframe>
+                    </div>
                 </div>
             </div>
         </section>

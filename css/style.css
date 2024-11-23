@@ -294,4 +294,46 @@ footer h3 {
     font-size: var(--text-base);
     line-height: 1.6;
     color: rgba(255, 255, 255, 0.9);
+}
+
+/* Language Switcher Styles */
+.language-switcher {
+    margin-right: 20px;
+}
+
+.lang-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 16px;
+    border: 1px solid var(--primary-color);
+    border-radius: var(--border-radius);
+    background: transparent;
+    color: var(--primary-color);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.lang-btn:hover {
+    background: var(--primary-color);
+    color: white;
+}
+
+.lang-icon {
+    font-size: 1.2em;
+}
+
+/* RTL-specific styles */
+[dir="rtl"] .language-switcher {
+    margin-right: 0;
+    margin-left: 20px;
+}
+
+/* Language transition effects */
+[data-translate] {
+    transition: opacity 0.3s ease;
+}
+
+.lang-switching [data-translate] {
+    opacity: 0;
 } 

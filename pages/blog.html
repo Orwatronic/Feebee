@@ -39,116 +39,93 @@
     <main>
         <!-- Hero Section -->
         <section class="page-hero blog-hero">
-            <h1>المدونة</h1>
-            <p>ابقَ على اطلاع: أحدث اتجاهات ERP والتحول الرقمي</p>
+            <h1 data-translate="blog.hero.title">المدونة</h1>
+            <p data-translate="blog.hero.subtitle">آخر المقالات والأخبار حول ERP والتحول الرقمي</p>
         </section>
 
-        <!-- Blog Content -->
         <section class="blog-content">
             <div class="container">
-                <!-- Blog Grid -->
                 <div class="blog-grid">
-                    <!-- Featured Article -->
-                    <article class="blog-card featured">
-                        <div class="blog-image">
-                            <img src="../images/blog/featured-post.jpg" alt="مقال مميز">
-                            <span class="category">تحول رقمي</span>
+                    <!-- Main Content -->
+                    <div class="blog-main">
+                        <!-- Blog Posts -->
+                        <div class="blog-posts">
+                            <!-- Blog Post Card Template -->
+                            <article class="blog-card">
+                                <div class="blog-image">
+                                    <img src="../images/blog/post1.jpg" alt="Blog Post 1">
+                                    <span class="category" data-translate="blog.categories.erp">ERP</span>
+                                </div>
+                                <div class="blog-content">
+                                    <div class="blog-meta">
+                                        <span class="date" data-translate="blog.posts.post1.date">15 مارس 2024</span>
+                                        <span class="author" data-translate="blog.posts.post1.author">بواسطة: أحمد محمد</span>
+                                    </div>
+                                    <h2 data-translate="blog.posts.post1.title">مستقبل أنظمة ERP في المملكة</h2>
+                                    <p data-translate="blog.posts.post1.excerpt">نظرة على مستقبل أنظمة تخطيط موارد المؤسسات...</p>
+                                    <a href="#" class="read-more" data-translate="blog.common.read_more">اقرأ المزيد</a>
+                                </div>
+                            </article>
+                            <!-- More blog posts... -->
                         </div>
-                        <div class="blog-info">
-                            <span class="date">23 نوفمبر 2024</span>
-                            <h2>كيف يمكن للشركات الصغيرة الاستفادة من التحول الرقمي؟</h2>
-                            <p>استكشف كيف يمكن للشركات الصغيرة والمتوسطة الاستفادة من التحول الرقمي لتعزيز نموها وتحسين كفاءتها التشغيلية.</p>
-                            <a href="#" class="read-more">اقرأ المزيد</a>
-                        </div>
-                    </article>
 
-                    <!-- Regular Articles -->
-                    <article class="blog-card">
-                        <div class="blog-image">
-                            <img src="../images/blog/post1.jpg" alt="عنوان المقال">
-                            <span class="category">ERP</span>
+                        <!-- Pagination -->
+                        <div class="pagination">
+                            <button class="prev" data-translate="blog.pagination.prev">السابق</button>
+                            <div class="page-numbers">
+                                <span class="current">1</span>
+                                <a href="#">2</a>
+                                <a href="#">3</a>
+                            </div>
+                            <button class="next" data-translate="blog.pagination.next">التالي</button>
                         </div>
-                        <div class="blog-info">
-                            <span class="date">20 نوفمبر 2024</span>
-                            <h3>أفضل ممارسات تطبيق نظام ERP</h3>
-                            <p>تعرف على أهم الممارسات التي تضمن نجاح تطبيق نظام ERP في مؤسستك.</p>
-                            <a href="#" class="read-more">اقرأ المزيد</a>
-                        </div>
-                    </article>
+                    </div>
 
-                    <article class="blog-card">
-                        <div class="blog-image">
-                            <img src="../images/blog/post2.jpg" alt="عنوان المقال">
-                            <span class="category">رقمنة</span>
+                    <!-- Sidebar -->
+                    <aside class="blog-sidebar">
+                        <!-- Search Widget -->
+                        <div class="widget search-widget">
+                            <h3 data-translate="blog.sidebar.search.title">بحث</h3>
+                            <form class="search-form">
+                                <input type="text" 
+                                       data-translate-placeholder="blog.sidebar.search.placeholder"
+                                       placeholder="ابحث هنا...">
+                                <button type="submit" data-translate="blog.sidebar.search.button">بحث</button>
+                            </form>
                         </div>
-                        <div class="blog-info">
-                            <span class="date">18 نوفمبر 2024</span>
-                            <h3>مستقبل الرقمنة في المنطقة العربية</h3>
-                            <p>نظرة على مستقبل الرقمنة وتأثيرها على الأعمال في المنطقة العربية.</p>
-                            <a href="#" class="read-more">اقرأ المزيد</a>
-                        </div>
-                    </article>
 
-                    <article class="blog-card">
-                        <div class="blog-image">
-                            <img src="../images/blog/post3.jpg" alt="عنوان المقال">
-                            <span class="category">تقنية</span>
+                        <!-- Categories Widget -->
+                        <div class="widget categories-widget">
+                            <h3 data-translate="blog.sidebar.categories.title">التصنيفات</h3>
+                            <ul>
+                                <li>
+                                    <a href="#" data-translate="blog.categories.erp">ERP</a>
+                                    <span>(10)</span>
+                                </li>
+                                <li>
+                                    <a href="#" data-translate="blog.categories.digital">التحول الرقمي</a>
+                                    <span>(8)</span>
+                                </li>
+                                <li>
+                                    <a href="#" data-translate="blog.categories.tech">التقنية</a>
+                                    <span>(5)</span>
+                                </li>
+                            </ul>
                         </div>
-                        <div class="blog-info">
-                            <span class="date">15 نوفمبر 2024</span>
-                            <h3>الذكاء الاصطناعي في إدارة الأعمال</h3>
-                            <p>كيف يمكن للذكاء الاصطناعي تحسين عمليات إدارة الأعمال وزيادة الإنتاجية.</p>
-                            <a href="#" class="read-more">اقرأ المزيد</a>
+
+                        <!-- Recent Posts Widget -->
+                        <div class="widget recent-posts-widget">
+                            <h3 data-translate="blog.sidebar.recent.title">آخر المقالات</h3>
+                            <ul>
+                                <li>
+                                    <a href="#" data-translate="blog.posts.recent1.title">أهمية التحول الرقمي</a>
+                                    <span class="date" data-translate="blog.posts.recent1.date">10 مارس 2024</span>
+                                </li>
+                                <!-- More recent posts... -->
+                            </ul>
                         </div>
-                    </article>
+                    </aside>
                 </div>
-
-                <!-- Sidebar -->
-                <aside class="blog-sidebar">
-                    <!-- Search -->
-                    <div class="sidebar-widget search">
-                        <input type="search" placeholder="ابحث في المدونة...">
-                    </div>
-
-                    <!-- Categories -->
-                    <div class="sidebar-widget categories">
-                        <h3>التصنيفات</h3>
-                        <ul>
-                            <li><a href="#">ERP (5)</a></li>
-                            <li><a href="#">التحول الرقمي (8)</a></li>
-                            <li><a href="#">الرقمنة (6)</a></li>
-                            <li><a href="#">تقنية المعلومات (4)</a></li>
-                        </ul>
-                    </div>
-
-                    <!-- Popular Posts -->
-                    <div class="sidebar-widget popular-posts">
-                        <h3>الأكثر قراءة</h3>
-                        <ul>
-                            <li>
-                                <a href="#">
-                                    <span class="post-title">دليلك الشامل لاختيار نظام ERP</span>
-                                    <span class="post-date">10 نوفمبر 2024</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <span class="post-title">خطوات نحو التحول الرقمي الناجح</span>
-                                    <span class="post-date">5 نوفمبر 2024</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </aside>
-            </div>
-
-            <!-- Pagination -->
-            <div class="pagination">
-                <a href="#" class="prev">السابق</a>
-                <a href="#" class="active">1</a>
-                <a href="#">2</a>
-                <a href="#">3</a>
-                <a href="#" class="next">التالي</a>
             </div>
         </section>
     </main>

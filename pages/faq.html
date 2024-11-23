@@ -20,49 +20,63 @@
     
     <main>
         <section class="page-hero faq-hero">
-            <h1>الأسئلة الشائعة</h1>
-            <p>إجابات على أكثر الأسئلة شيوعاً</p>
+            <h1 data-translate="faq.hero.title">الأسئلة الشائعة</h1>
+            <p data-translate="faq.hero.subtitle">إجابات على أكثر الأسئلة شيوعاً</p>
         </section>
 
         <section class="faq-content">
             <div class="container">
                 <!-- قائمة التصنيفات -->
                 <div class="faq-categories">
-                    <button class="category-btn active" data-category="all">جميع الأسئلة</button>
-                    <button class="category-btn" data-category="erp">ERP</button>
-                    <button class="category-btn" data-category="digital">التحول الرقمي</button>
-                    <button class="category-btn" data-category="technical">الدعم الفني</button>
+                    <button class="category-btn active" data-category="all" 
+                            data-translate="faq.categories.all">جميع الأسئلة</button>
+                    <button class="category-btn" data-category="erp" 
+                            data-translate="faq.categories.erp">ERP</button>
+                    <button class="category-btn" data-category="digital" 
+                            data-translate="faq.categories.digital">التحول الرقمي</button>
+                    <button class="category-btn" data-category="technical" 
+                            data-translate="faq.categories.technical">الدعم الفني</button>
                 </div>
 
                 <!-- الأسئلة والأجوبة -->
                 <div class="faq-list">
                     <div class="faq-item" data-category="erp">
                         <div class="faq-question">
-                            <h3>ما هي المدة الزمنية لتطبيق نظام ERP؟</h3>
+                            <h3 data-translate="faq.erp.q1.question">ما هي المدة الزمنية لتطبيق نظام ERP؟</h3>
                             <span class="toggle-icon">+</span>
                         </div>
                         <div class="faq-answer">
-                            <p>تختلف المدة حسب حجم المؤسسة واحتياجاتها، ولكن عادةً ما تستغرق من 3 إلى 6 أشهر.</p>
+                            <p data-translate="faq.erp.q1.answer">تختلف المدة حسب حجم المؤسسة واحتياجاتها، ولكن عادةً ما تستغرق من 3 إلى 6 أشهر.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item" data-category="erp">
+                        <div class="faq-question">
+                            <h3 data-translate="faq.erp.q2.question">هل يمكن تخصيص النظام حسب احتياجاتنا؟</h3>
+                            <span class="toggle-icon">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p data-translate="faq.erp.q2.answer">نعم، نقدم حلولاً مخصصة تناسب احتياجات عملك الخاصة.</p>
                         </div>
                     </div>
 
                     <div class="faq-item" data-category="digital">
                         <div class="faq-question">
-                            <h3>كيف يمكنني البدء في عملية التحول الرقمي؟</h3>
+                            <h3 data-translate="faq.digital.q1.question">كيف يمكنني البدء في عملية التحول الرقمي؟</h3>
                             <span class="toggle-icon">+</span>
                         </div>
                         <div class="faq-answer">
-                            <p>نبدأ بتقييم شامل لاحتياجات مؤسستك ثم نضع خطة تحول رقمي مخصصة تناسب أهدافك.</p>
+                            <p data-translate="faq.digital.q1.answer">نبدأ بتقييم شامل لاحتياجات مؤسستك ثم نضع خطة تحول رقمي مخصصة.</p>
                         </div>
                     </div>
 
                     <div class="faq-item" data-category="technical">
                         <div class="faq-question">
-                            <h3>كيف يتم تقديم الدعم الفني؟</h3>
+                            <h3 data-translate="faq.technical.q1.question">كيف يتم تقديم الدعم الفني؟</h3>
                             <span class="toggle-icon">+</span>
                         </div>
                         <div class="faq-answer">
-                            <p>نقدم دعماً فنياً على مدار الساعة من خلال فريق متخصص عبر الهاتف والبريد الإلكتروني.</p>
+                            <p data-translate="faq.technical.q1.answer">نقدم دعماً فنياً على مدار الساعة من خلال فريق متخصص.</p>
                         </div>
                     </div>
 
@@ -71,10 +85,10 @@
 
                 <!-- نموذج السؤال -->
                 <div class="ask-question">
-                    <h2>هل لديك سؤال آخر؟</h2>
+                    <h2 data-translate="faq.ask.title">هل لديك سؤال آخر؟</h2>
                     <form id="questionForm" action="#" method="POST">
                         <div class="form-group">
-                            <label for="question">اكتب سؤالك</label>
+                            <label for="question" data-translate="faq.ask.form.question">اكتب سؤالك</label>
                             <textarea id="question" name="question" rows="4" required></textarea>
                         </div>
                         <div class="form-group">

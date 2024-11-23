@@ -1,0 +1,262 @@
+{
+    "navigation": {
+        "home": "Home",
+        "about": "About",
+        "services": "Services",
+        "work": "Our Work",
+        "blog": "Blog",
+        "contact": "Contact",
+        "faq": "FAQ"
+    },
+
+    "hero": {
+        "title": "Towards a Limitless Digital Future",
+        "subtitle": "Innovative ERP and Digital Transformation Solutions",
+        "cta_button": "Get Free Consultation"
+    },
+
+    "services": {
+        "title": "Our Services",
+        "erp": {
+            "title": "Enterprise Resource Planning",
+            "short_desc": "Integrated ERP solutions to enhance your business operations",
+            "long_desc": "We provide comprehensive solutions to improve your business operations through advanced ERP systems"
+        },
+        "digital_transformation": {
+            "title": "Digital Transformation",
+            "short_desc": "Modernize your traditional operations using latest digital technologies",
+            "long_desc": "We help you transform your traditional operations into advanced digital solutions"
+        },
+        "digitization": {
+            "title": "Digitization",
+            "short_desc": "Convert your data and processes into an integrated digital system",
+            "long_desc": "We provide comprehensive services to convert all your operations and data into digital format"
+        }
+    },
+
+    "stats": {
+        "title": "Our Statistics",
+        "projects": {
+            "number": "100+",
+            "label": "Successful Projects"
+        },
+        "experience": {
+            "number": "10",
+            "label": "Years of Excellence"
+        }
+    },
+
+    "testimonials": {
+        "title": "Testimonials",
+        "subtitle": "What Our Clients Say"
+    },
+
+    "footer": {
+        "contact_info": {
+            "title": "Contact Us",
+            "phone": "Phone",
+            "email": "Email",
+            "address": "Address"
+        },
+        "social_links": {
+            "title": "Follow Us",
+            "facebook": "Facebook",
+            "twitter": "Twitter",
+            "linkedin": "LinkedIn"
+        },
+        "copyright": "All Rights Reserved © 2024 FeeBee"
+    },
+
+    "about": {
+        "hero": {
+            "title": "About Us",
+            "subtitle": "Our Journey Towards Excellence in ERP and Digital Transformation"
+        },
+        "vision": {
+            "title": "Our Vision",
+            "description": "To be the leading partner in digital transformation for companies in the region"
+        },
+        "mission": {
+            "title": "Our Mission",
+            "description": "Providing innovative technical solutions that help our clients achieve their goals and enhance their growth"
+        },
+        "values": {
+            "title": "Our Values",
+            "innovation": {
+                "title": "Innovation",
+                "description": "We constantly strive to provide innovative solutions"
+            },
+            "quality": {
+                "title": "Quality",
+                "description": "We commit to the highest quality standards"
+            },
+            "reliability": {
+                "title": "Reliability",
+                "description": "We build long-term relationships with our clients"
+            }
+        }
+    },
+
+    "services_page": {
+        "hero": {
+            "title": "Our Services",
+            "subtitle": "Comprehensive Solutions for Your Business Growth"
+        },
+        "erp": {
+            "title": "Enterprise Resource Planning",
+            "description": "We provide integrated ERP solutions including:",
+            "features": {
+                "f1": "Financial & Accounting Management",
+                "f2": "Human Resources Management",
+                "f3": "Inventory & Procurement Management",
+                "f4": "Customer Relationship Management",
+                "f5": "Reports & Analytics"
+            }
+        },
+        "digital_transformation": {
+            "title": "Digital Transformation",
+            "description": "We guide you through digital transformation with:",
+            "features": {
+                "f1": "Current Process Analysis",
+                "f2": "Digital Transformation Strategy",
+                "f3": "Process Automation",
+                "f4": "Staff Training",
+                "f5": "Continuous Monitoring & Improvement"
+            }
+        },
+        "it_solutions": {
+            "title": "IT Solutions",
+            "description": "We provide comprehensive IT solutions including:",
+            "features": {
+                "f1": "Custom Software Development",
+                "f2": "Infrastructure Management",
+                "f3": "Cybersecurity Solutions",
+                "f4": "Continuous Technical Support",
+                "f5": "Technical Consultations"
+            }
+        },
+        "why_choose": {
+            "title": "Why Choose FeeBee?",
+            "experience": {
+                "title": "Extensive Experience",
+                "description": "Over 10 years in technology"
+            },
+            "support": {
+                "title": "Continuous Support",
+                "description": "24/7 specialized technical support team"
+            },
+            "solutions": {
+                "title": "Custom Solutions",
+                "description": "We design solutions that fit your specific needs"
+            }
+        }
+    },
+
+    "contact": {
+        "hero": {
+            "title": "Contact Us",
+            "subtitle": "We're here to help. Get in touch with us"
+        },
+        "info": {
+            "title": "Contact Information",
+            "address": {
+                "title": "Address",
+                "value": "Riyadh, Saudi Arabia"
+            },
+            "phone": {
+                "title": "Phone",
+                "value": "+966 XX XXX XXXX"
+            },
+            "email": {
+                "title": "Email",
+                "value": "info@feebee.com"
+            },
+            "hours": {
+                "title": "Working Hours",
+                "value": "Sun - Thu: 9:00 AM - 5:00 PM"
+            }
+        },
+        "form": {
+            "title": "Send Message",
+            "name": {
+                "label": "Full Name",
+                "placeholder": "Enter your full name"
+            },
+            "email": {
+                "label": "Email",
+                "placeholder": "Enter your email"
+            },
+            "phone": {
+                "label": "Phone Number",
+                "placeholder": "Enter your phone number"
+            },
+            "subject": {
+                "label": "Subject",
+                "default": "Select a subject",
+                "options": {
+                    "erp": "ERP Inquiry",
+                    "digital": "Digital Transformation",
+                    "support": "Technical Support",
+                    "other": "Other Topic"
+                }
+            },
+            "message": {
+                "label": "Message",
+                "placeholder": "Write your message here"
+            },
+            "submit": "Send Message"
+        },
+        "map": {
+            "title": "Our Location"
+        }
+    },
+
+    "faq": {
+        "hero": {
+            "title": "Frequently Asked Questions",
+            "subtitle": "Answers to the Most Common Questions"
+        },
+        "categories": {
+            "all": "All Questions",
+            "erp": "ERP",
+            "digital": "Digital Transformation",
+            "technical": "Technical Support"
+        },
+        "erp": {
+            "q1": {
+                "question": "How long does it take to implement an ERP system?",
+                "answer": "The duration varies depending on the size and needs of your organization, but typically takes 3 to 6 months."
+            },
+            "q2": {
+                "question": "Can the system be customized to our needs?",
+                "answer": "Yes, we provide customized solutions that fit your specific business needs."
+            }
+        },
+        "digital": {
+            "q1": {
+                "question": "How can I start the digital transformation process?",
+                "answer": "We begin with a comprehensive assessment of your organization's needs and then create a customized digital transformation plan."
+            }
+        },
+        "technical": {
+            "q1": {
+                "question": "How is technical support provided?",
+                "answer": "We provide 24/7 technical support through our specialized team."
+            }
+        },
+        "ask": {
+            "title": "Have Another Question?",
+            "form": {
+                "question": {
+                    "label": "Your Question",
+                    "placeholder": "Write your question here"
+                },
+                "email": {
+                    "label": "Email for Response",
+                    "placeholder": "Enter your email"
+                },
+                "submit": "Submit Question"
+            }
+        }
+    }
+} 

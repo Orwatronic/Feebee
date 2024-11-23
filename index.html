@@ -14,102 +14,102 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="js/language.js"></script>
 </head>
 <body>
-    <!-- القائمة الرئيسية -->
+    <!-- Header Navigation -->
     <header>
         <nav>
             <div class="logo">
                 <img src="images/feebee-logo.png" alt="FeeBee Logo">
             </div>
             <ul class="nav-links">
-                <li><a href="/">الرئيسية</a></li>
-                <li><a href="/about">من نحن</a></li>
-                <li><a href="/services">خدماتنا</a></li>
-                <li><a href="/work">أعمالنا وعملاؤنا</a></li>
-                <li><a href="/blog">المدونة</a></li>
-                <li><a href="/contact">اتصل بنا</a></li>
-                <li><a href="/faq">الأسئلة الشائعة</a></li>
+                <li><a href="/" data-translate="navigation.home">الرئيسية</a></li>
+                <li><a href="/about" data-translate="navigation.about">من نحن</a></li>
+                <li><a href="/services" data-translate="navigation.services">خدماتنا</a></li>
+                <li><a href="/work" data-translate="navigation.work">أعمالنا وعملاؤنا</a></li>
+                <li><a href="/blog" data-translate="navigation.blog">المدونة</a></li>
+                <li><a href="/contact" data-translate="navigation.contact">اتصل بنا</a></li>
+                <li><a href="/faq" data-translate="navigation.faq">الأسئلة الشائعة</a></li>
             </ul>
+            <div class="language-switcher">
+                <button class="lang-btn">
+                    <span class="lang-text">English</span>
+                    <span class="lang-icon">🌐</span>
+                </button>
+            </div>
         </nav>
     </header>
 
-    <!-- القسم الرئيسي -->
     <main>
         <!-- Hero Section -->
         <section class="hero">
-            <h1>نحو مستقبل رقمي بلا حدود</h1>
-            <p>حلول مبتكرة في ERP والتحول الرقمي لتطوير أعمالك</p>
-            <button class="cta-button">احصل على استشارة مجانية</button>
+            <h1 data-translate="hero.title">نحو مستقبل رقمي بلا حدود</h1>
+            <p data-translate="hero.subtitle">حلول مبتكرة في ERP والتحول الرقمي لتطوير أعمالك</p>
+            <button class="cta-button" data-translate="hero.cta_button">احصل على استشارة مجانية</button>
         </section>
 
-        <!-- الخدمات -->
+        <!-- Services Section -->
         <section class="services">
-            <h2>خدماتنا</h2>
+            <h2 data-translate="services.title">خدماتنا</h2>
             <div class="services-grid">
-                <!-- Service Card 1 -->
+                <!-- ERP Service Card -->
                 <div class="service-card hme-solution-box">
                     <div class="hme-solution-content">
-                        <h3>أنظمة تخطيط موارد المؤسسات</h3>
-                        <p>حلول ERP متكاملة لتحسين كفاءة عملياتك التجارية</p>
+                        <h3 data-translate="services.erp.title">أنظمة تخطيط موارد المؤسسات</h3>
+                        <p data-translate="services.erp.short_desc">حلول ERP متكاملة لتحسين كفاءة عملياتك التجارية</p>
                     </div>
                     <div class="hme-solution-hover-inside">
-                        <h4>أنظمة تخطيط موارد المؤسسات</h4>
-                        <p>نقدم حلولاً متكاملة لتحسين كفاءة عملياتك التجارية<br>
-                           من خلال أنظمة ERP المتطورة التي تغطي جميع جوانب<br>
-                           إدارة الموارد والعمليات</p>
+                        <h4 data-translate="services.erp.title">أنظمة تخطيط موارد المؤسسات</h4>
+                        <p data-translate="services.erp.long_desc">نقدم حلولاً متكاملة لتحسين كفاءة عملياتك التجارية</p>
                     </div>
                 </div>
 
-                <!-- Service Card 2 -->
+                <!-- Digital Transformation Card -->
                 <div class="service-card hme-solution-box">
                     <div class="hme-solution-content">
-                        <h3>التحول الرقمي</h3>
-                        <p>تحديث عملياتك التقليدية باستخدام أحدث التقنيات الرقمية</p>
+                        <h3 data-translate="services.digital_transformation.title">التحول الرقمي</h3>
+                        <p data-translate="services.digital_transformation.short_desc">تحديث عملياتك التقليدية</p>
                     </div>
                     <div class="hme-solution-hover-inside">
-                        <h4>التحول الرقمي</h4>
-                        <p>نساعدك في تحويل عملياتك التقليدية إلى حلول رقمية<br>
-                           متطورة تعزز الكفاءة وتحسن تجربة العملاء<br>
-                           وتزيد من القدرة التنافسية</p>
+                        <h4 data-translate="services.digital_transformation.title">التحول الرقمي</h4>
+                        <p data-translate="services.digital_transformation.long_desc">نساعدك في تحويل عملياتك التقليدية</p>
                     </div>
                 </div>
 
-                <!-- Service Card 3 -->
+                <!-- Digitization Card -->
                 <div class="service-card hme-solution-box">
                     <div class="hme-solution-content">
-                        <h3>الرقمنة</h3>
-                        <p>تحويل بياناتك وعملياتك إلى نظام رقمي متكامل</p>
+                        <h3 data-translate="services.digitization.title">الرقمنة</h3>
+                        <p data-translate="services.digitization.short_desc">تحويل بياناتك وعملياتك</p>
                     </div>
                     <div class="hme-solution-hover-inside">
-                        <h4>الرقمنة</h4>
-                        <p>نقدم خدمات متكاملة لتحويل جميع عملياتك وبياناتك<br>
-                           إلى صيغة رقمية مع ضمان الأمان والكفاءة<br>
-                           وسهولة الوصول</p>
+                        <h4 data-translate="services.digitization.title">الرقمنة</h4>
+                        <p data-translate="services.digitization.long_desc">نقدم خدمات متكاملة لتحويل عملياتك</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- الإحصائيات -->
+        <!-- Stats Section -->
         <section class="stats">
             <div class="stats-container">
                 <div class="stat-item">
-                    <h3>100+</h3>
-                    <p>مشروع ناجح</p>
+                    <h3 data-translate="stats.projects.number">100+</h3>
+                    <p data-translate="stats.projects.label">مشروع ناجح</p>
                 </div>
                 <div class="stat-item">
-                    <h3>10</h3>
-                    <p>سنوات من التميز</p>
+                    <h3 data-translate="stats.experience.number">10</h3>
+                    <p data-translate="stats.experience.label">سنوات من التميز</p>
                 </div>
-                <!-- يمكن إضافة المزيد من الإحصائيات -->
             </div>
         </section>
 
-        <!-- شهادات العملاء -->
+        <!-- Testimonials Section -->
         <section class="testimonials">
-            <h2>آراء عملائنا</h2>
-            <!-- محتوى الشهادات -->
+            <h2 data-translate="testimonials.title">آراء عملائنا</h2>
+            <p data-translate="testimonials.subtitle">ماذا يقول عملاؤنا عنا</p>
+            <!-- Testimonials content -->
         </section>
     </main>
 
@@ -120,22 +120,23 @@
                 <img src="images/feebee-logo.png" alt="FeeBee Logo">
             </div>
             <div class="contact-info">
-                <h3>تواصل معنا</h3>
-                <p>هاتف: [رقم الهاتف]</p>
-                <p>البريد الإلكتروني: info@feebee.com</p>
-                <p>العنوان: [عنوان الشركة]</p>
+                <h3 data-translate="footer.contact_info.title">تواصل معنا</h3>
+                <p><span data-translate="footer.contact_info.phone">هاتف</span>: [رقم الهاتف]</p>
+                <p><span data-translate="footer.contact_info.email">البريد الإلكتروني</span>: info@feebee.com</p>
+                <p><span data-translate="footer.contact_info.address">العنوان</span>: [عنوان الشركة]</p>
             </div>
             <div class="social-links">
-                <h3>تابعنا على</h3>
-                <!-- روابط وسائل التواصل الاجتماعي -->
+                <h3 data-translate="footer.social_links.title">تابعنا على</h3>
+                <!-- Social links -->
             </div>
         </div>
         <div class="copyright">
-            <p>جميع الحقوق محفوظة © 2024 FeeBee</p>
+            <p data-translate="footer.copyright">جميع الحقوق محفوظة © 2024 FeeBee</p>
         </div>
     </footer>
 
-    <!-- روابط JavaScript -->
+    <!-- Scripts -->
+    <script src="js/language.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
