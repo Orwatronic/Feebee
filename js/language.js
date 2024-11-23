@@ -20,8 +20,8 @@ class LanguageManager {
     async loadTranslations() {
         try {
             console.log('Loading translations...');
-            const arResponse = await fetch('js/translations/ar.json');
-            const enResponse = await fetch('js/translations/en.json');
+            const arResponse = await fetch('/js/translations/ar.json');
+            const enResponse = await fetch('/js/translations/en.json');
             
             if (!arResponse.ok || !enResponse.ok) {
                 throw new Error('Failed to load translations');
@@ -34,6 +34,7 @@ class LanguageManager {
             console.log('Translations loaded successfully');
         } catch (error) {
             console.error('Error loading translations:', error);
+            console.error('Error details:', error.message);
         }
     }
 
@@ -92,9 +93,4 @@ class LanguageManager {
     saveLanguagePreference() {
         localStorage.setItem('preferredLanguage', this.currentLang);
     }
-}
-
-// Initialize language manager when DOM is loaded
-document.addEventListener('DOMContentLoaded', () => {
-    window.langManager = new LanguageManager();
-}); 
+} 
